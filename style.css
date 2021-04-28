@@ -65,13 +65,19 @@ main {
   color: hsla(0, 0%, 100%, 0.6);
 }
 
-.images {
+.backk {
   background-color: hsla(277, 80%, 50%, 0.5);
   height: 300px;
   border-radius: 10px 10px 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  width: 100%;
 }
 
-picture > * {
+.images,
+.images > img {
   width: 100%;
   height: 300px;
   z-index: -1;
@@ -90,7 +96,7 @@ picture > * {
   padding-bottom: 1.3rem;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 1000px) {
   .container {
     width: 100%;
     max-width: 1440px;
@@ -100,7 +106,7 @@ picture > * {
     justify-content: center;
   }
   main {
-    padding: 6rem;
+    padding: 5rem;
     background-color: hsl(233, 47%, 7%);
     margin: 2.5rem auto;
     border: 1px solid hsl(277, 64%, 61%);
@@ -116,21 +122,30 @@ picture > * {
   .card > * {
     flex: 1 50%;
   }
-  .back {
-    background: url(./images/image-header-desktop.jpg) no-repeat center
-      center/cover;
-    z-index: -1;
-    border-radius: 10px 0 0 10px;
-    height: 100%;
-    width: 100%;
-    margin: auto;
-  }
   .images {
-    background-color: hsla(277, 80%, 50%, 0.5);
+    width: 100% !important ;
+    height: 100% !important;
+    min-height: 100% !important;
+    z-index: 1;
+    object-fit: cover;
+    position: relative;
+    border: none;
+  }
+  .images > img {
+    object-fit: cover;
+    width: 100% !important;
+    height: 100% !important;
+    min-width: 100% !important;
+    min-height: 100% !important;
+    border-radius: 0 10px 10px 0;
+    border: none;
+  }
+  .backk {
+    border-radius: 0 10px 10px 0;
     height: 100%;
-    border-radius: 10px 0 0 10px;
     width: 100%;
   }
+
   #text {
     text-align: left;
     padding: 2rem 4rem;
