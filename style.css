@@ -44,6 +44,7 @@ li:last-child {
   border-radius: 10px;
   max-width: 375px;
   position: relative;
+  margin: 0.5rem;
 }
 
 #text {
@@ -55,12 +56,12 @@ li:last-child {
   font-family: "Inter", sans-serif;
   color: hsl(0, 0%, 100%);
   font-weight: 700;
-  font-size: x-large;
+  font-size: 1.8rem;
 }
 
 .deca {
   font-family: "Lexend Deca", sans-serif;
-  font-size: 12px;
+  font-size: 0.8rem;
   color: hsla(0, 0%, 100%, 0.75);
   font-weight: 400;
 }
@@ -148,7 +149,8 @@ li {
   .card > * {
     flex: 1 50%;
   }
-  .images {
+  .images,
+  .images > img {
     width: 100% !important ;
     height: 100% !important;
     min-height: 100% !important;
@@ -157,15 +159,7 @@ li {
     position: relative;
     border: none;
   }
-  .images > img {
-    object-fit: cover;
-    width: 100% !important;
-    height: 100% !important;
-    min-width: 100% !important;
-    min-height: 100% !important;
-    border-radius: 0 10px 10px 0;
-    border: none;
-  }
+
   .backk {
     border-radius: 0 10px 10px 0;
     height: 100%;
