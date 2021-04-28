@@ -104,7 +104,7 @@ main {
     justify-content: center;
   }
   main {
-    padding: 5rem;
+    padding: 4rem;
     background-color: hsl(233, 47%, 7%);
     margin: 0 auto;
     border: 1px solid hsl(277, 64%, 61%);
