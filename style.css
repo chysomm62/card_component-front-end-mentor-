@@ -24,7 +24,7 @@ body {
 main {
   padding: 4rem 1.5rem;
   background-color: hsl(233, 47%, 7%);
-  margin: 2em auto;
+  margin: 0 auto;
   border: 1px solid hsl(277, 64%, 61%);
   position: relative;
 }
@@ -40,7 +40,7 @@ main {
   padding: 2.5rem 1.5rem;
 }
 
-#text > h1 {
+#text > header {
   padding: 1.5rem 1.5rem;
 }
 
@@ -100,24 +100,22 @@ main {
   .container {
     width: 100%;
     max-width: 1440px;
-    height: 100vh;
     max-height: 100vh;
-    align-items: center;
     justify-content: center;
   }
   main {
     padding: 5rem;
     background-color: hsl(233, 47%, 7%);
-    margin: 2.5rem auto;
+    margin: 0 auto;
     border: 1px solid hsl(277, 64%, 61%);
     position: relative;
-    width: 90%;
+    width: 100%;
   }
   .card {
     display: flex;
     justify-content: center;
     flex-direction: row-reverse;
-    height: 100%;
+    height: auto;
   }
   .card > * {
     flex: 1 50%;
@@ -150,7 +148,7 @@ main {
     text-align: left;
     padding: 2rem 4rem;
   }
-  #text > h1 {
+  #text > header {
     padding: 1.5rem 0;
   }
   .statistics {
