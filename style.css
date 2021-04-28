@@ -147,6 +147,9 @@ main {
   #text {
     text-align: left;
     padding: 2rem 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   #text > header {
     padding: 1.5rem 0;
