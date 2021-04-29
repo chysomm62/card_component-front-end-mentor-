@@ -17,6 +17,10 @@ body {
   background-color: hsl(233, 47%, 7%);
 }
 
+img {
+  display: block;
+}
+
 ul {
   list-style-type: none;
 }
